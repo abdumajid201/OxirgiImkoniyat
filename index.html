@@ -2,355 +2,74 @@
 <html lang="uz">
 
 <head>
+
+    <link rel="preload" as="image" href="./images/blog/bouldings (1).avif">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piskent shahridagi uy</title>
+    <meta name="description" content="Piskent shahridagi bosh to'lovsiz xonadonlar haqida ma'lumot va ro'yxatdan o'tish sahifasi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800&display=swap">
+    <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #F7FBFF;
-        }
-
-        @font-face{
-            font-family: Inter;
-            src: url(./fonts/Archivo_Black\,Bebas_Neue\,Golos_Text\,Inter\,Montserrat\,etc.zip);
-            font-display: swap;
-            font-weight: 700;
-        }
-        @font-face{
-            font-family: Bebas Neue;
-            src: url(./fonts/Archivo_Black\,Bebas_Neue\,Golos_Text\,Inter\,Montserrat\,etc.zip);
-            font-display: swap;
-            font-weight: 400;
-        }
-
-        .head {
-            padding-bottom: 42px;
-            max-width: 420px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .head__col {
-            background: var(--color-white-solid, #FFFFFF);
-            box-shadow: 0 4px 6.6px 0 #00000026;
-            padding: 11px 30px 16px;
-            display: flex;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            justify-content: space-between;
-        }
-
-        .head__col__text {
-            font-family: Inter, sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .main {
-            max-width: 420px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-        }
-
-        .main__title {
-            font-family: Bebas Neue, sans-serif;
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 100%;
-            text-align: center;
-            vertical-align: middle;
-            text-transform: uppercase;
-            color: #0260E8;
-            margin-bottom: 2px;
-        }
-
-        .main__text {
-            font-family: Inter, sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 145%;
-            text-align: center;
-            vertical-align: middle;
-            max-width: 340px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .main__text__span {
-            font-family: Inter, sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 145%;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .main__images {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #4ED2FF 100%);
-        }
-
-        .main__btn {
-            padding-top: 27px;
-            padding-bottom: 27px;
-            padding-left: 20px;
-            padding-right: 20px;
-            max-width: 390px;
-            width: 100%;
-            border-radius: 50px;
-            border: none;
-            box-shadow: 0 4px 0 0 #064EB5;
-            background-color: #0367FD;
-            font-family: Bebas Neue, sans-serif;
-            font-weight: 400;
-            font-size: clamp(18px, 4vw, 32px);
-            line-height: 100%;
-            letter-spacing: 4%;
-            text-align: center;
-            vertical-align: middle;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            margin-bottom: 16px;
-            cursor: pointer;
-        }
-
-        .main__info__col {
-            background-image: url('./images/blog/bouldings\ \(1\).avif');
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding-top: 250px;
-        }
-
-        .main__info {
-            display: flex;
-            width: fit-content;
-            gap: 10px;
-            border: 1px solid #0367FD;
-            padding: 8px 18px;
-            border-radius: 999px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 16px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .main__info__title {
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 28px;
-            letter-spacing: 0%;
-            vertical-align: middle;
-        }
-
-        .piskent__info__time {
-            font-family: Inter, sans-serif;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 1;
-            color: #2C0815;
-        }
-
-        .info {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .info__title {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .info__main {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-            justify-content: center;
-        }
-
-        .info__main__title {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 60px;
-        }
-
-        .info__main__text {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            line-height: 150%;
-            text-align: left;
-        }
-
-        .info__main__text__span {
-            font-weight: 700;
-        }
-
-        .info__btn {
-            padding-top: 27px;
-            padding-bottom: 27px;
-            padding-left: 20px;
-            padding-right: 20px;
-            max-width: 390px;
-            width: 100%;
-            border-radius: 50px;
-            border: none;
-            box-shadow: 0 4px 0 0 #064EB5;
-            background-color: #0367FD;
-            font-family: Bebas Neue, sans-serif;
-            font-weight: 400;
-            font-size: clamp(18px, 4vw, 32px);
-            line-height: 100%;
-            letter-spacing: 4%;
-            text-align: center;
-            vertical-align: middle;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            margin-bottom: 16px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .info__btn:hover {
-            transform: translateY(2px);
-            box-shadow: 0 3px 0 #174bb5;
-        }
-
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .modal.active {
-            display: flex;
-        }
-
-        .modal__content {
-            background: #fff;
-            width: 90%;
-            max-width: 400px;
-            height: 50vh;
-            border-radius: 20px;
-            padding: 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .modal__close {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 22px;
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-
-        .modal__title {
-            text-align: center;
-            font-family: Bebas Neue, sans-serif;
-            font-size: 28px;
-        }
-
-        #modalForm {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .modal__input {
-            width: 100%;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-
-        .modal__submit {
-            padding: 15px;
-            border-radius: 30px;
-            border: none;
-            background: #0367FD;
-            color: #fff;
-            font-size: 18px;
-            cursor: pointer;
-        }
+      
     </style>
 </head>
 
 <body>
-    <div class="head">
-        <div class="head__col">
-            <p class="head__col__text">27-Mart</p>
-            <p class="head__col__text">20:00</p>
-        </div>
-    </div>
-
-    <div class="main">
-        <h2 class="main__title">Piskent shahridan</h2>
-        <p class="main__text"><span class="main__text__span">Bosh to'lovsiz</span> xonadonlar. Faqat 80 ta uyga
-            qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
-        <div class="main__info__col">
-            <button class="main__btn" type="button">Bepul qatnashish</button>
-        </div>
-    </div>
-
-    <div class="main__info">
-        <img src="./images/blog/timer.avif" alt="Timer" loading="eager" fetchpriority="high">
-        <h3 class="piskent__info__time" id="timer">01:58</h3>
-    </div>
-
-    <section class="info">
-        <h2 class="info__title">LOYIHA QULAYLIKLARI</h2>
-
-        <div class="info__col">
-            <div class="info__main">
-                <h3 class="info__main__title">01</h3>
-                <p class="info__main__text">
-                    Farzandingiz uchun
-                    <span class="info__main__text__span">Maktab</span><br>
-                    va <span class="info__main__text__span">Bog'cha</span>
-                </p>
-            </div>
-
-            <div class="info__main">
-                <h3 class="info__main__title">02</h3>
-                <p class="info__main__text">
-                    <span class="info__main__text__span">Shahar markazidagi</span> uylar <br>
-                    kabi sharoitlarga ega
-                </p>
-            </div>
-
-            <div class="info__main">
-                <h3 class="info__main__title">03</h3>
-                <p class="info__main__text">
-                    <span class="info__main__text__span">Boshlang'ich to'lovsiz</span> oyiga <br>
-                    3 mln 800 ming so'mdan
-                </p>
+    <div class="page">
+        <div class="head">
+            <div class="head__col">
+                <p class="head__col__text">27-Mart</p>
+                <p class="head__col__text">20:00</p>
             </div>
         </div>
 
-        <button class="info__btn" type="button">Bepul qatnashish</button>
-    </section>
+        <main class="main">
+            <h1 class="main__title">Piskent shahridan</h1>
+            <p class="main__text"><span class="main__text__span">Bosh to'lovsiz</span> xonadonlar. Faqat 80 ta uyga
+                qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
+
+            <div class="hero">
+                <img class="hero__image" src="./images/blog/bouldings%20(1).avif" alt="Piskentdagi turar joy"
+                    width="390" height="305" loading="eager" fetchpriority="high" decoding="async">
+                <button class="cta-btn main__btn" type="button">Bepul qatnashish</button>
+            </div>
+
+            <div class="main__info">
+                <img  src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
+                <h3 class="piskent__info__time" id="timer">01:58</h3>
+            </div>
+        </main>
+
+        <section class="info">
+            <h2 class="info__title">Loyiha qulayliklari</h2>
+
+            <div class="info__col">
+                <div class="info__main">
+                    <h3 class="info__main__title">01</h3>
+                    <p class="info__main__text">Farzandingiz uchun <span class="info__main__text__span">Maktab</span>
+                        va <span class="info__main__text__span">Bog'cha</span></p>
+                </div>
+
+                <div class="info__main">
+                    <h3 class="info__main__title">02</h3>
+                    <p class="info__main__text"><span class="info__main__text__span">Shahar markazidagi</span> uylar
+                        kabi sharoitlarga ega</p>
+                </div>
+
+                <div class="info__main">
+                    <h3 class="info__main__title">03</h3>
+                    <p class="info__main__text"><span class="info__main__text__span">Boshlang'ich to'lovsiz</span>
+                        oyiga 3 mln 800 ming so'mdan</p>
+                </div>
+            </div>
+
+            <button class="cta-btn info__btn" type="button">Bepul qatnashish</button>
+        </section>
+    </div>
 
     <div class="modal" id="modal">
         <div class="modal__content">
