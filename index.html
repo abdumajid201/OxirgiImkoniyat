@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piskent shahridagi uy</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high">
-    <meta http-equiv="Cache-Control" content="max-age=31536000">
-    <link rel="preload" href="/font.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         :root {
             --card-bg: #ffffff;
@@ -302,7 +299,13 @@
             padding: 15px;
         }
     </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+
 </head>
+
 <body>
     <div class="page">
         <div class="head">
@@ -318,13 +321,13 @@
                 qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
 
             <div class="hero">
-                <img  class="hero__image" src="./images/blog/bouldings%20(1).avif" alt="Piskentdagi turar joy" 
+                <img class="hero__image" src="./images/blog/bouldings%20(1).avif" alt="Piskentdagi turar joy"
                     width="390" height="305" loading="eager" fetchpriority="high" decoding="async">
                 <button class="cta-btn main__btn" type="button">Bepul qatnashish</button>
             </div>
 
             <div class="main__info">
-                <img  src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
+                <img src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
                 <h3 class="piskent__info__time" id="timer">01:58</h3>
             </div>
         </main>
@@ -372,4 +375,5 @@
     <script defer src="./js/app.js"></script>
     <script defer src="./js/Modal2.js"></script>
 </body>
+
 </html>
