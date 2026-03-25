@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
-
-    <link rel="preload" as="image" href="./images/blog/bouldings (1).avif">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piskent shahridagi uy</title>
@@ -12,17 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800&display=swap">
     <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high">
-  
-</head>
-
-  <style>
+    <style>
         :root {
-            --page-bg: #f4f8ff;
             --card-bg: #ffffff;
             --blue: #1565f5;
-            --blue-dark: #0d4fc5;
             --text: #111111;
-            --muted: #2b2b2b;
             --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
         }
 
@@ -79,19 +70,16 @@
 
         .main__title {
             color: var(--blue);
-            font-family: "Bebas Neue", sans-serif;
             display: block;
+            font-family: "Bebas Neue", sans-serif;
             font-size: clamp(32px, 8vw, 40px);
             letter-spacing: 0.02em;
             line-height: 0.92;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 10px;
+            margin: 0 auto 10px;
             max-width: 100%;
-            width: fit-content;
-            overflow-wrap: normal;
             text-transform: uppercase;
             white-space: nowrap;
+            width: fit-content;
         }
 
         .main__text {
@@ -168,7 +156,9 @@
         }
 
         .info {
-            padding: 8px 0 0;
+            padding-top: 8px;
+            content-visibility: auto;
+            contain-intrinsic-size: 520px;
         }
 
         .info__title {
@@ -177,15 +167,12 @@
             font-size: clamp(26px, 7vw, 34px);
             letter-spacing: 0.01em;
             line-height: 0.95;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 18px;
+            margin: 0 auto 18px;
             max-width: 100%;
-            width: fit-content;
-            overflow-wrap: normal;
             text-align: center;
             text-transform: uppercase;
             white-space: nowrap;
+            width: fit-content;
         }
 
         .info__col {
@@ -283,13 +270,11 @@
             display: block;
             font-family: "Bebas Neue", sans-serif;
             font-size: 30px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             max-width: 100%;
-            width: fit-content;
-            overflow-wrap: normal;
             text-align: center;
             white-space: nowrap;
+            width: fit-content;
         }
 
         #modalForm {
@@ -316,7 +301,7 @@
             padding: 15px;
         }
     </style>
-
+</head>
 <body>
     <div class="page">
         <div class="head">
@@ -338,7 +323,7 @@
             </div>
 
             <div class="main__info">
-                <img  src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
+                <img src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
                 <h3 class="piskent__info__time" id="timer">01:58</h3>
             </div>
         </main>
@@ -386,5 +371,4 @@
     <script defer src="./js/app.js"></script>
     <script defer src="./js/Modal2.js"></script>
 </body>
-
 </html>
