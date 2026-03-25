@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>piskent shahridagi uy</title>
+    <title>Piskent shahridagi uy</title>
+    <meta name="description" content="Piskent shahridagi bosh to'lovsiz xonadonlar haqida ma'lumot va ro'yxatdan o'tish sahifasi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap">
+    <link rel="preload" as="image" href="./images/blog/bouldings.png" fetchpriority="high">
     <link rel="stylesheet" href="./css/blog.css">
 </head>
 
 <body>
-
     <div class="head">
         <div class="head__col">
             <p class="head__col__text">27-Mart</p>
@@ -19,16 +24,17 @@
 
     <div class="main">
         <h2 class="main__title">Piskent shahridan</h2>
-        <p class="main__text"><span class="main__text__span">Bosh to‘lovsiz</span> xonadonlar. Faqat 80 ta uyga
-            qo’yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
+        <p class="main__text"><span class="main__text__span">Bosh to'lovsiz</span> xonadonlar. Faqat 80 ta uyga
+            qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
         <div class="main__info__col">
-
+            <img class="main__hero-image" src="./images/blog/bouldings.png" alt="Piskent shahridagi turar joy binosi"
+                width="390" height="307" loading="eager" fetchpriority="high" decoding="async">
             <button class="main__btn" type="button">Bepul qatnashish</button>
         </div>
-
     </div>
+
     <div class="main__info">
-        <img src="./images/blog/timer.png" alt="Timer" loading="eager" fetchpriority="high">
+        <img src="./images/blog/timer.png" alt="Timer" width="24" height="24" loading="eager" fetchpriority="high" decoding="async">
         <h3 class="piskent__info__time" id="timer">01:58</h3>
     </div>
 
@@ -36,13 +42,12 @@
         <h2 class="info__title">LOYIHA QULAYLIKLARI</h2>
 
         <div class="info__col">
-
             <div class="info__main">
                 <h3 class="info__main__title">01</h3>
                 <p class="info__main__text">
                     Farzandingiz uchun
                     <span class="info__main__text__span">Maktab</span><br>
-                    va <span class="info__main__text__span">Bog’cha</span>
+                    va <span class="info__main__text__span">Bog'cha</span>
                 </p>
             </div>
 
@@ -57,24 +62,23 @@
             <div class="info__main">
                 <h3 class="info__main__title">03</h3>
                 <p class="info__main__text">
-                    <span class="info__main__text__span">Boshlang’ich to’lovsiz</span> oyiga <br>
-                    3 mln 800 ming so’mdan
+                    <span class="info__main__text__span">Boshlang'ich to'lovsiz</span> oyiga <br>
+                    3 mln 800 ming so'mdan
                 </p>
             </div>
-
         </div>
+
         <button class="info__btn" type="button">Bepul qatnashish</button>
     </section>
 
     <div class="modal" id="modal">
         <div class="modal__content">
-            <button class="modal__close" id="closeModal" type="button">✕</button>
-
-            <h2 class="modal__title">Ro‘yxatdan o‘tish</h2>
+            <button class="modal__close" id="closeModal" type="button" aria-label="Modalni yopish">&times;</button>
+            <h2 class="modal__title">Ro'yxatdan o'tish</h2>
 
             <form action="" id="modalForm">
-                <input type="text" id="nameInput" placeholder="Ismingizni kiriting" class="modal__input">
-                <input type="text" id="phoneInput" placeholder="+998 (__) ___-__-__" class="modal__input">
+                <input type="text" id="nameInput" placeholder="Ismingizni kiriting" class="modal__input" autocomplete="name">
+                <input type="tel" id="phoneInput" placeholder="+998 (__) ___-__-__" class="modal__input" inputmode="tel" autocomplete="tel">
                 <button class="modal__submit" type="submit">Yuborish</button>
             </form>
         </div>
@@ -82,7 +86,6 @@
 
     <script defer src="./js/app.js"></script>
     <script defer src="./js/Modal2.js"></script>
-
 </body>
 
 </html>
