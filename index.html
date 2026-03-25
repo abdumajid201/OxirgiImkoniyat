@@ -160,7 +160,7 @@
         .info__title {
             display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(36px, 5.2vw, 42px);
+            font-size: clamp(32px, 5.2vw, 42px);
             letter-spacing: 0.005em;
             line-height: 1;
             margin: 0 auto 16px;
@@ -183,6 +183,9 @@
             gap: 12px;
             grid-template-columns: 64px 1fr;
             padding-left: clamp(20px, 3vw, 60px);
+        }
+        .main__info__time{
+            object-fit: contain;
         }
 
         .info__main__title {
@@ -228,6 +231,7 @@
         .info__main__position{
             position: absolute;
             top: 17px;
+            left: -2px;
             border-radius: 50%;
 
         }
@@ -333,18 +337,18 @@
             </div>
 
             <div class="main__info">
-                <img src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
+                <img class="main__info__time" src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
                 <h3 class="piskent__info__time" id="timer">01:58</h3>
             </div>
         </main>
 
         <section class="info">
-            <h2 class="info__title">Loyiha qulayliklari</h2>
+            <strong class="info__title">Loyiha qulayliklari</strong>
 
             <div class="info__col">
                 <div class="info__main">
                     <h3 class="info__main__title">01
-                        <img width="13" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
                     </h3>
                     <p class="info__main__text">Farzandingiz uchun <span class="info__main__text__span">Maktab</span> <br>
                         va <span class="info__main__text__span">Bog'cha</span></p>
@@ -352,7 +356,7 @@
 
                 <div class="info__main">
                     <h3 class="info__main__title">02
-                        <img width="13" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
 
                     </h3>
                     <p class="info__main__text"><span class="info__main__text__span">Shahar markazidagi</span> uylar <br>
@@ -361,7 +365,7 @@
 
                 <div class="info__main">
                     <h3 class="info__main__title">03
-                        <img width="13" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
 
                     </h3>
                     <p class="info__main__text"><span class="info__main__text__span">Boshlang'ich to'lovsiz</span>
