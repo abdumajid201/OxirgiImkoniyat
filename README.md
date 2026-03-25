@@ -1,3 +1,1 @@
-ÿþ# Abdumajid
-# Abdumajid
-# Abdumajid
+ÿþ
