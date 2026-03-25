@@ -1,12 +1,15 @@
 @font-face {
     font-family: "Bebas Neue";
-    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+    src: url("../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Regular.ttf") format("truetype");
-    font-weight: 400;
+    src: url("../public/fonts/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
     font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
 }
