@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"content="Piskentdagi eng yaxshi turar joylar. Zamonaviy uy-joylar, qulay sharoitlar va hamyonbop narxlar.">
     <title>Piskent shahridagi xonadon</title>
+    <meta name="description"
+        content="Piskentdagi eng yaxshi turar joylar. Zamonaviy uy-joylar, qulay sharoitlar va hamyonbop narxlar.">
     <style>
         :root {
             --card-bg: #ffffff;
@@ -101,7 +102,8 @@
         .hero__image {
             margin: 0 auto;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
+
         }
 
         .cta-btn {
@@ -299,7 +301,7 @@
     <noscript>
         <link rel="stylesheet" href="./css/main.css" />
     </noscript>
-    <link rel="preload" href="./images/blog/buildi.avif" as="image" fetchpriority="high">
+    <link rel="preload" href="./images/blog/bouldings (1).avif" as="image" fetchpriority="high">
 </head>
 
 <body>
@@ -317,8 +319,10 @@
                 qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
 
             <div class="hero">
-                <img class="hero__image" src="./images/blog/buildi.avif" alt="Piskentdagi turar joy" width="390"
-                    height="276" fetchpriority="high" decoding="async">
+                <img class="hero_image" src="./images/blog/buildi.avif" srcset="./images/blog/bouldings (1).avif 390w,
+          ./images/blog/bouldings (1).avif 780w" alt="Piskentdagi turar joy" width="390" height="276"
+                    fetchpriority="high" decoding="async">
+
                 <button class="cta-btn info__btn" type="button">Bepul qatnashish</button>
             </div>
 
@@ -347,7 +351,7 @@
                 <div class="info__main">
                     <h3 class="info__main__title">02
                         <img width="16" height="16" class="info__main__position" src="./images/blog/Vector.avif"
-                            alt="vector image" loading="lazy" decoding="async">
+                            alt="vector image " loading="lazy" decoding="async">
 
                     </h3>
                     <p class="info__main__text"><span class="info__main__text__span">Shahar markazidagi</span> uylar
