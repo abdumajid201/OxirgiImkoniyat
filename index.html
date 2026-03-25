@@ -47,7 +47,9 @@
 
         .head__col {
             background: var(--card-bg);
-            box-shadow: var(--shadow);
+            background: var(--color-white-solid, #FFFFFF);
+            box-shadow: 0px 4px 6.6px 0px #00000026;
+
             border-bottom-left-radius: 22px;
             border-bottom-right-radius: 22px;
             display: flex;
@@ -184,7 +186,8 @@
             grid-template-columns: 64px 1fr;
             padding-left: clamp(20px, 3vw, 60px);
         }
-        .main__info__time{
+
+        .main__info__time {
             object-fit: contain;
         }
 
@@ -228,7 +231,7 @@
             max-width: 390px;
         }
 
-        .info__main__position{
+        .info__main__position {
             position: absolute;
             top: 17px;
             left: -2px;
@@ -337,7 +340,8 @@
             </div>
 
             <div class="main__info">
-                <img class="main__info__time" src="./images/blog/timer.avif" alt="Timer" width="24" height="24" loading="eager" decoding="async">
+                <img class="main__info__time" src="./images/blog/timer.avif" alt="Timer" width="24" height="24"
+                    loading="eager" decoding="async">
                 <p class="piskent__info__time" id="timer">01:58</p>
             </div>
         </main>
@@ -348,24 +352,29 @@
             <div class="info__col">
                 <div class="info__main">
                     <h3 class="info__main__title">01
-                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt=""
+                            loading="lazy" decoding="async">
                     </h3>
-                    <p class="info__main__text">Farzandingiz uchun <span class="info__main__text__span">Maktab</span> <br>
+                    <p class="info__main__text">Farzandingiz uchun <span class="info__main__text__span">Maktab</span>
+                        <br>
                         va <span class="info__main__text__span">Bog'cha</span></p>
                 </div>
 
                 <div class="info__main">
                     <h3 class="info__main__title">02
-                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt=""
+                            loading="lazy" decoding="async">
 
                     </h3>
-                    <p class="info__main__text"><span class="info__main__text__span">Shahar markazidagi</span> uylar <br>
+                    <p class="info__main__text"><span class="info__main__text__span">Shahar markazidagi</span> uylar
+                        <br>
                         kabi sharoitlarga ega</p>
                 </div>
 
                 <div class="info__main">
                     <h3 class="info__main__title">03
-                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt="" loading="lazy" decoding="async"> 
+                        <img width="16" class="info__main__position" src="./images/blog/Vector.avif" alt=""
+                            loading="lazy" decoding="async">
 
                     </h3>
                     <p class="info__main__text"><span class="info__main__text__span">Boshlang'ich to'lovsiz</span>
