@@ -6,29 +6,35 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    let time = timerElement.textContent.trim();
-    let parts = time.split(":");
+    const time = timerElement.textContent.trim();
+    const parts = time.split(":");
 
-    let minutes = parseInt(parts[0]);
-    let seconds = parseInt(parts[1]);
+    const minutes = parseInt(parts[0], 10);
+    const seconds = parseInt(parts[1], 10);
 
-    let totalSeconds = minutes * 60 + seconds;
+    if (Number.isNaN(minutes) || Number.isNaN(seconds)) {
+        console.log("Timer formati noto'g'ri!");
+        return;
+    }
 
-    const countdown = setInterval(() => {
+    const initialTotalSeconds = minutes * 60 + seconds;
+    let totalSeconds = initialTotalSeconds;
+
+    const updateTimer = () => {
+        const min = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+        const sec = String(totalSeconds % 60).padStart(2, "0");
+        timerElement.textContent = `${min}:${sec}`;
+    };
+
+    updateTimer();
+
+    setInterval(() => {
         if (totalSeconds <= 0) {
-            clearInterval(countdown);
-            timerElement.textContent = "00:00";
-            return;
+            totalSeconds = initialTotalSeconds;
+        } else {
+            totalSeconds--;
         }
 
-        totalSeconds--;
-
-        let min = Math.floor(totalSeconds / 60);
-        let sec = totalSeconds % 60;
-
-        min = min < 10 ? "0" + min : min;
-        sec = sec < 10 ? "0" + sec : sec;
-
-        timerElement.textContent = `${min}:${sec}`;
+        updateTimer();
     }, 1000);
 });
