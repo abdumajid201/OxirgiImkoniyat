@@ -1,0 +1,17 @@
+:is(.main__title, .info__title, .modal__title) {
+    display: inline-block;
+    max-width: 100%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: normal;
+    white-space: nowrap;
+}
+
+.main__title {
+    font-size: clamp(32px, 8vw, 42px) !important;
+}
+
+.info__title {
+    font-size: clamp(26px, 7vw, 36px) !important;
+}

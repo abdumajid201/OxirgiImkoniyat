@@ -9,11 +9,13 @@
     <title>Piskent shahridagi uy</title>
     <meta name="description" content="Piskent shahridagi bosh to'lovsiz xonadonlar haqida ma'lumot va ro'yxatdan o'tish sahifasi.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800&display=swap">
     <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high">
-    <style>
+  
+</head>
+
+  <style>
         :root {
             --page-bg: #f4f8ff;
             --card-bg: #ffffff;
@@ -78,11 +80,18 @@
         .main__title {
             color: var(--blue);
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(50px, 12vw, 66px);
+            display: block;
+            font-size: clamp(32px, 8vw, 40px);
             letter-spacing: 0.02em;
             line-height: 0.92;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 10px;
+            max-width: 100%;
+            width: fit-content;
+            overflow-wrap: normal;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .main__text {
@@ -163,13 +172,20 @@
         }
 
         .info__title {
+            display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(44px, 11vw, 60px);
+            font-size: clamp(26px, 7vw, 34px);
             letter-spacing: 0.01em;
             line-height: 0.95;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 18px;
+            max-width: 100%;
+            width: fit-content;
+            overflow-wrap: normal;
             text-align: center;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .info__col {
@@ -264,9 +280,16 @@
         }
 
         .modal__title {
+            display: block;
             font-family: "Bebas Neue", sans-serif;
             font-size: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            width: fit-content;
+            overflow-wrap: normal;
             text-align: center;
+            white-space: nowrap;
         }
 
         #modalForm {
@@ -293,7 +316,6 @@
             padding: 15px;
         }
     </style>
-</head>
 
 <body>
     <div class="page">
