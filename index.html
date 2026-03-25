@@ -4,25 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piskent shahridagi uy</title>
-    <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preload" as="image" href="./images/blog/bouldings%20(1).avif" fetchpriority="high" decoding="async">
     <style>
         :root {
             --card-bg: #ffffff;
             --blue: #1565f5;
             --text: #111111;
             --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-        }
-        @font-face {
-            font-family: "Bebas Neue";
-            src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Inter";
-            src: url("./fonts/Inter-Regular.ttf") format("truetype");
-            font-weight: 400;
-            font-style: normal;
         }
 
         * {
@@ -122,12 +111,13 @@
             cursor: pointer;
             display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(20px, 7vw, 34px);
-            letter-spacing: 0.03em;
+            font-size: clamp(18px, 5.8vw, 28px);
+            letter-spacing: 0.02em;
             line-height: 1;
-            padding: 28px 20px;
+            padding: 26px 20px;
             text-align: center;
             text-transform: uppercase;
+            white-space: nowrap;
             width: 100%;
         }
 
