@@ -3,7 +3,6 @@ const modal = document.getElementById("modal");
 const openBtns = document.querySelectorAll(".main__btn, .info__btn");
 const closeBtn = document.getElementById("closeModal");
 
-// ochish
 function openModal() {
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
@@ -14,18 +13,16 @@ function closeModal() {
     document.body.style.overflow = "";
 }
 
-openBtns.forEach(btn => {
+openBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         openModal();
     });
 });
 
-// yopish (X)
 closeBtn.addEventListener("click", () => {
     closeModal();
 });
 
-// tashqarini bosganda yopish
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
         closeModal();
@@ -38,8 +35,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-
-// ===== TELEFON MASK =====
 const phoneInput = document.getElementById("phoneInput");
 
 phoneInput.addEventListener("input", (e) => {
@@ -69,8 +64,6 @@ phoneInput.addEventListener("input", (e) => {
     e.target.value = formatted;
 });
 
-
-// ===== VALIDATSIYA =====
 const modalForm = document.getElementById("modalForm");
 
 modalForm.addEventListener("submit", (e) => {
@@ -81,18 +74,18 @@ modalForm.addEventListener("submit", (e) => {
     const nameInput = document.getElementById("nameInput");
 
     if (nameInput.value.trim().length < 2) {
-        alert("âŒ Ismingizni toâ€˜gâ€˜ri kiriting!");
+        alert("Ismingizni to'g'ri kiriting!");
         nameInput.focus();
         return;
     }
 
     if (numbers.length !== 12 || !numbers.startsWith("998")) {
-        alert("âŒ Toâ€˜gâ€˜ri telefon kiriting!\nMasalan: +998 (90) 123-45-67");
+        alert("To'g'ri telefon kiriting!\nMasalan: +998 (90) 123-45-67");
         phoneInput.focus();
         return;
     }
 
-    alert("âœ… Ma'lumot qabul qilindi!");
+    alert("Ma'lumot qabul qilindi!");
     modalForm.reset();
     closeModal();
     phoneInput.value = "+998";
