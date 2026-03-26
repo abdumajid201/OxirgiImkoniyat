@@ -102,7 +102,7 @@
         .hero__image {
             margin: 0 auto;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
 
         }
 
@@ -381,8 +381,8 @@
             <h2 class="modal__title">Ro'yxatdan o'tish</h2>
 
             <form action="" id="modalForm">
-                <input type="text" id="nameInput" placeholder="Ismingizni kiriting" class="modal__input">
-                <input type="text" id="phoneInput" placeholder="+998 (__) ___-__-__" class="modal__input">
+                <input type="text" id="nameInput" placeholder="Ismingizni kiriting" class="modal__input" required>
+                <input type="text" id="phoneInput" placeholder="+998 (__) ___-__-__" class="modal__input" required>
                 <button class="modal__submit" type="submit">Yuborish</button>
             </form>
         </div>
