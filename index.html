@@ -40,7 +40,7 @@
         .page {
             max-width: 420px;
             margin: 0 auto;
-            padding: 0 10px 32px;
+            padding-bottom: 42px;
         }
 
         .head {
@@ -72,7 +72,7 @@
             color: var(--blue);
             display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(24px, 6.2vw, 32px);
+            font-size: clamp(32px, 10vw, 48px);
             letter-spacing: 0.02em;
             line-height: 0.92;
             margin: 0 auto 10px;
@@ -80,18 +80,29 @@
             text-transform: uppercase;
             white-space: nowrap;
             width: fit-content;
+            font-weight: 400;
         }
 
         .main__text {
-            font-size: 16px;
+            font-family: Inter, sans-serif;
             font-weight: 400;
-            line-height: 1.45;
+            font-size: 18px;
+            line-height: 145%;
+            text-align: center;
+            vertical-align: middle;
+
             margin: 0 auto 10px;
             max-width: 345px;
         }
 
         .main__text__span {
-            font-weight: 800;
+            font-family: Inter , sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 145%;
+            text-align: center;
+            vertical-align: middle;
+
         }
 
         .hero {
@@ -101,8 +112,9 @@
 
         .hero__image {
             margin: 0 auto;
-            width: 100%;
-            object-fit: cover;
+            max-width: 100%;
+            object-fit: contain;
+            max-height: 100%;
 
         }
 
@@ -115,7 +127,7 @@
             cursor: pointer;
             display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(21px, 6vw, 30px);
+            font-size: clamp(26px, 8vw, 32px);
             font-weight: 400;
             letter-spacing: 0.035em;
             line-height: 0.92;
@@ -165,7 +177,7 @@
         .info__title {
             display: block;
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(32px, 5.2vw, 42px);
+            font-size: clamp(36px, 8vw, 42px);
             letter-spacing: 0.005em;
             line-height: 1;
             margin: 0 auto 16px;
@@ -196,7 +208,7 @@
 
         .info__main__title {
             font-family: "Bebas Neue", sans-serif;
-            font-size: 60px;
+            font-size: clamp(50px, 9vw, 60px);
             line-height: 0.9;
             position: relative;
         }
@@ -315,7 +327,7 @@
 
         <main class="main">
             <h1 class="main__title">Piskent shahridan</h1>
-            <p class="main__text"><span class="main__text__span">Bosh to'lovsiz</span> xonadonlar. Faqat 80 ta uyga
+            <p class="main__text"><span class="main__text__span">Bosh to'lovsiz</span> xonadonlar. Faqat 80 ta <br> uyga
                 qo'yilgan <span class="main__text__span">aksiyaga ulgurib qoling!</span></p>
 
             <div class="hero">
